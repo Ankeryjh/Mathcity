@@ -1,6 +1,6 @@
 # 智慧城市数字大屏项目
 
-![项目演示图](链接到项目演示图的URL)
+![项目演示图](https://github.com/Ankeryjh/Mathcity/blob/master/src/assets/img/show.png)
 
 ## 项目简介
 
@@ -23,17 +23,41 @@
 
 ## 安装和运行
 
-### 系统要求
-
-- [列出所需的操作系统、软件或硬件要求]
-
 ### 安装步骤
 
-1. 克隆仓库: `git clone https://github.com/your-username/your-project.git`
-2. 进入项目目录: `cd your-project`
-3. 安装依赖: `npm install`
-4. 配置后端数据库连接信息：
-    - 打开 `backend/db.js`
+1. 克隆仓库:
+
+    ```bash
+    git clone https://github.com/Ankeryjh/Mathcity.git
+    ```
+
+2. 进入项目目录:
+
+    ```bash
+    cd Mathcity
+    ```
+
+3. 安装前端依赖:
+
+    ```bash
+    npm install
+    ```
+
+4. 进入 `class_back` 目录:
+
+    ```bash
+    cd class_back
+    ```
+
+5. 安装后端依赖:
+
+    ```bash
+    npm install
+    ```
+
+6. 配置后端数据库连接信息:
+
+    - 打开 `class_back/db.js`
     - 替换以下内容为你自己的数据库账号密码和数据库名：
 
     ```javascript
@@ -58,7 +82,30 @@
     };
     ```
 
-5. 启动应用: `npm start`
+
+
+8. 启动前端应用:
+
+    ```bash
+    npm run serve
+    ```
+
+9. 在另一个终端中进入 `class_back` 目录:
+
+    ```bash
+    cd class_back
+    ```
+
+10. 启动后端:
+
+    ```bash
+    node index.js
+    ```
+
+### 运行程序时的注意事项
+
+- 确保你的数据库已经启动。
+- 确保正确连接到了你自己的数据库。
 
 ## 项目结构
 
@@ -68,18 +115,8 @@
 
 提供关于如何使用项目的简单示例或说明。
 
-## 贡献
-
-如果您希望为项目做出贡献，请阅读 [贡献指南](CONTRIBUTING.md)。
 
 ## 报告问题
 
-如果您发现任何问题，请在 [问题页面](https://github.com/your-username/your-project/issues) 报告。
+如果您发现任何问题，请在 [问题页面](https://github.com/Ankeryjh/Mathcity/issues) 报告。
 
-## 获取帮助
-
-如果您需要帮助，请联系我们 [你的联系方式]。
-
-## 许可证
-
-本项目采用 [许可证名称] 许可，详见 [LICENSE.md](LICENSE.md) 文件。
